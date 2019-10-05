@@ -204,24 +204,20 @@ canvas {
   font-size: 4rem
 }
 
-.h0 {
+.h0,.h1 {
   font-size: 3rem
 }
 
-.h1 {
-  font-size: 2.25rem
-}
-
 .h2 {
-  font-size: 1.75rem
+  font-size: 2rem
 }
 
 .h3 {
-  font-size: 1.25rem
+  font-size: 1.5rem
 }
 
 .h4 {
-  font-size: 1rem
+  font-size: 1.125rem
 }
 
 .h5 {
@@ -294,11 +290,11 @@ canvas {
 }
 
 .line-height-3 {
-  line-height: 1.75
+  line-height: 1.5rem
 }
 
 .line-height-4 {
-  line-height: 1.6
+  line-height: 2rem
 }
 
 .list-style-none {
@@ -1320,9 +1316,9 @@ canvas {
 }
 
 body {
-  background: #1d1d1d;
-  color: #fff;
-  font-family: Lora,serif;
+  background: #fff;
+  color: #4a4a4a;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
   min-width: 315px;
   overflow-x: hidden;
   font-smooth: always;
@@ -1340,7 +1336,7 @@ p {
 }
 
 .ampstart-accent {
-  color: #fff
+  color: #003f93
 }
 
 #content:target {
@@ -1349,36 +1345,36 @@ p {
 }
 
 .ampstart-title-lg {
-  font-size: 2.25rem;
-  line-height: 1.33333;
+  font-size: 3rem;
+  line-height: 3.5rem;
   letter-spacing: .06rem
 }
 
 .ampstart-title-md {
-  font-size: 1.75rem;
-  line-height: 1.71429;
+  font-size: 2rem;
+  line-height: 2.5rem;
   letter-spacing: .06rem
 }
 
 .ampstart-title-sm {
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  line-height: 2rem;
   letter-spacing: .06rem
 }
 
 .ampstart-subtitle,body {
-  line-height: 1.75;
+  line-height: 1.5rem;
   letter-spacing: normal
 }
 
 .ampstart-subtitle {
-  color: #fff;
+  color: #003f93;
   font-size: 1rem
 }
 
 .ampstart-byline,.ampstart-caption,.ampstart-hint,.ampstart-label {
   font-size: .875rem;
-  color: #fff;
+  color: #4f4f4f;
   line-height: 1.125rem;
   letter-spacing: .06rem
 }
@@ -1398,23 +1394,23 @@ p {
 }
 
 .h1,h1 {
-  font-size: 2.25rem;
-  line-height: 1.33333
+  font-size: 3rem;
+  line-height: 3.5rem
 }
 
 .h2,h2 {
-  font-size: 1.75rem;
-  line-height: 1.71429
+  font-size: 2rem;
+  line-height: 2.5rem
 }
 
 .h3,h3 {
-  font-size: 1.25rem;
-  line-height: 1.6
+  font-size: 1.5rem;
+  line-height: 2rem
 }
 
 .h4,h4 {
-  font-size: 1rem;
-  line-height: 1.75
+  font-size: 1.125rem;
+  line-height: 1.5rem
 }
 
 .h5,h5 {
@@ -1459,13 +1455,13 @@ a,a:active,a:visited {
 }
 
 .ampstart-btn-secondary {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #fff
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000
 }
 
 .ampstart-btn-secondary:visited {
-  color: #fff
+  color: #000
 }
 
 .ampstart-btn:active .ampstart-btn:focus {
@@ -1479,12 +1475,12 @@ a,a:active,a:visited {
 }
 
 .ampstart-dropcap:first-letter {
-  color: #fff;
-  font-size: 2.25rem;
+  color: #000;
+  font-size: 3rem;
   font-weight: 700;
   float: left;
   overflow: hidden;
-  line-height: 2.25rem;
+  line-height: 3rem;
   margin-left: 0;
   margin-right: .5rem
 }
@@ -1495,8 +1491,8 @@ a,a:active,a:visited {
 }
 
 .ampstart-initialcap:first-letter {
-  color: #fff;
-  font-size: 2.25rem;
+  color: #000;
+  font-size: 3rem;
   font-weight: 700;
   margin-left: -2px
 }
@@ -1504,7 +1500,7 @@ a,a:active,a:visited {
 .ampstart-pullquote {
   border: none;
   border-left: 4px solid #000;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   padding-left: 1.5rem
 }
 
@@ -1543,7 +1539,7 @@ a,a:active,a:visited {
   display: inline-block;
   content: "+";
   padding: 0 0 0 1.5rem;
-  color: #fff
+  color: #003f93
 }
 
 .ampstart-dropdown>[expanded]>header:after {
@@ -1556,7 +1552,7 @@ a,a:active,a:visited {
 
 .ampstart-dropdown-item {
   background-color: #000;
-  color: #fff;
+  color: #003f93;
   opacity: .9
 }
 
@@ -1565,14 +1561,14 @@ a,a:active,a:visited {
 }
 
 .ampstart-footer {
-  background-color: inherit;
-  color: currentColor;
+  background-color: #fff;
+  color: #000;
   padding-top: 5rem;
   padding-bottom: 5rem
 }
 
 .ampstart-footer .ampstart-icon {
-  fill: currentColor
+  fill: #000
 }
 
 .ampstart-footer .ampstart-social-follow li:last-child {
@@ -1617,7 +1613,7 @@ a,a:active,a:visited {
 .ampstart-readmore:after {
   display: block;
   content: "⌄";
-  font-size: 1.75rem
+  font-size: 2rem
 }
 
 .ampstart-readmore-text {
@@ -1644,7 +1640,7 @@ amp-carousel .ampstart-image-with-heading {
 }
 
 .ampstart-image-with-caption figcaption {
-  color: #fff;
+  color: #4f4f4f;
   line-height: 1.125rem
 }
 
@@ -1657,7 +1653,7 @@ amp-carousel .ampstart-image-with-caption {
   width: 300px;
   min-width: 100px;
   font-size: 1rem;
-  line-height: 1.75
+  line-height: 1.5rem
 }
 
 .ampstart-input [disabled],.ampstart-input [disabled]+label {
@@ -1671,7 +1667,7 @@ amp-carousel .ampstart-image-with-caption {
 .ampstart-input>input,.ampstart-input>select,.ampstart-input>textarea {
   width: 100%;
   margin-top: 1rem;
-  line-height: 1.75;
+  line-height: 1.5rem;
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #4a4a4a;
@@ -1681,7 +1677,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-input>label {
-  color: #fff;
+  color: #003f93;
   pointer-events: none;
   text-align: left;
   font-size: .875rem;
@@ -1724,7 +1720,7 @@ amp-carousel .ampstart-image-with-caption {
   position: absolute;
   bottom: 0;
   left: 45%;
-  background: #fff;
+  background: #003f93;
   transition: .2s;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   visibility: hidden;
@@ -1759,13 +1755,13 @@ amp-carousel .ampstart-image-with-caption {
 
 .ampstart-input>select+label:before {
   content: "⌄";
-  line-height: 1.75;
+  line-height: 1.5rem;
   position: absolute;
   right: 5px;
   zoom: 2;
   top: 0;
   bottom: 0;
-  color: #fff
+  color: #003f93
 }
 
 .ampstart-input-chk,.ampstart-input-radio {
@@ -1780,7 +1776,7 @@ amp-carousel .ampstart-image-with-caption {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 1px solid #fff;
+  border: 1px solid #003f93;
   vertical-align: middle;
   margin-right: .5rem;
   text-align: center
@@ -1812,17 +1808,17 @@ amp-carousel .ampstart-image-with-caption {
   line-height: 1.4rem;
   vertical-align: middle;
   text-align: center;
-  background-color: #000
+  background-color: #fff
 }
 
 .ampstart-input input[type=checkbox]:checked:after {
-  background-color: #fff;
-  color: #000;
+  background-color: #003f93;
+  color: #fff;
   content: "✓"
 }
 
 .ampstart-input input[type=radio]:checked {
-  background-color: #000
+  background-color: #fff
 }
 
 .ampstart-input input[type=radio]:after {
@@ -1835,8 +1831,8 @@ amp-carousel .ampstart-image-with-caption {
 
 .ampstart-input input[type=radio]:checked:after {
   content: "";
-  font-size: 2.25rem;
-  background-color: #fff
+  font-size: 3rem;
+  background-color: #003f93
 }
 
 .ampstart-input>label,_:-ms-lang(x) {
@@ -1860,8 +1856,8 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-headerbar {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   z-index: 999;
   box-shadow: 0 0 5px 2px rgba(0,0,0,.1)
 }
@@ -1899,7 +1895,7 @@ amp-carousel .ampstart-image-with-caption {
 
 .ampstart-navbar-trigger {
   line-height: 3.5rem;
-  font-size: 1.75rem
+  font-size: 2rem
 }
 
 .ampstart-headerbar-nav {
@@ -1927,32 +1923,32 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-nav-dropdown amp-accordion header {
-  background-color: #000;
+  background-color: #fff;
   border: none
 }
 
 .ampstart-nav-dropdown amp-accordion ul {
-  background-color: #000
+  background-color: #fff
 }
 
 .ampstart-nav-dropdown .ampstart-dropdown-item,.ampstart-nav-dropdown .ampstart-dropdown>section>header {
-  background-color: #000;
-  color: #fff
+  background-color: #fff;
+  color: #000
 }
 
 .ampstart-nav-dropdown .ampstart-dropdown-item {
-  color: #fff
+  color: #003f93
 }
 
 .ampstart-sidebar {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   min-width: 300px;
   width: 300px
 }
 
 .ampstart-sidebar .ampstart-icon {
-  fill: #fff
+  fill: #003f93
 }
 
 .ampstart-sidebar-header {
@@ -1977,21 +1973,21 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-related-article-section {
-  border-color: #fff
+  border-color: #4a4a4a
 }
 
 .ampstart-related-article-section .ampstart-heading {
-  color: #fff;
+  color: #4a4a4a;
   font-weight: 400
 }
 
 .ampstart-related-article-readmore {
-  color: #fff;
+  color: #000;
   letter-spacing: 0
 }
 
 .ampstart-related-section-items>li {
-  border-bottom: 1px solid #fff
+  border-bottom: 1px solid #4a4a4a
 }
 
 .ampstart-related-section-items>li:last-child {
@@ -2042,58 +2038,24 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-icon {
-  fill: #fff
+  fill: #003f93
 }
 
-.h1,.h2,.h3,h1,h2,h3 {
-  font-family: Playfair Display,serif
+.ampstart-input {
+  width: 100%
 }
 
-.h1,h1 {
-  letter-spacing: .1px
+main .ampstart-social-follow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px
 }
 
-.h2,h2 {
-  letter-spacing: 0
+main .ampstart-social-follow li {
+  transform: scale(1.8)
 }
 
-.h3,h3 {
-  letter-spacing: .3px
-}
-
-.h4,.h5,.h6,h4,h5,h6 {
-  font-family: Lato,sans-serif;
-  letter-spacing: 0
-}
-
-.ampstart-fullpage-hero-heading-text {
-  display: block;
-  padding: .5rem;
-  line-height: 1rem
-}
-
-.ampstart-fullpage-hero-heading-text,.ampstart-image-fullpage-hero .ampstart-image-credit {
-  -webkit-box-decoration-break: none;
-  box-decoration-break: none;
-  background: none
-}
-
-.theme2-divider:after {
-  border-bottom: 1px solid #fff;
-  content: "";
-  display: block;
-  height: 2rem;
-  width: 8.33%
-}
-
-.theme2-anchored {
-  margin-top: -5.5rem;
-  padding-top: 5.5rem
-}
-
-.ampstart-dropcap:first-letter {
-  color: inherit;
-  font-size: 3.125rem;
-  font-weight: inherit;
-  line-height: 1.12
+h1+.ampstart-byline time {
+  font-size: 1.5rem;
+  font-weight: 400
 }
