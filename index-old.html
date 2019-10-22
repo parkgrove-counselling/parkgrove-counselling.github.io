@@ -1368,7 +1368,7 @@ canvas {
 }
 
 body {
-  background: #8cbf4b;
+  background: #1d1d1d;
   color: #fff;
   font-family: Lora,serif;
   min-width: 315px;
@@ -1908,8 +1908,8 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-headerbar {
-  background-color: #fcfcf4;
-  color: #55200e;
+  background-color: #000;
+  color: #fff;
   z-index: 999;
   box-shadow: 0 0 5px 2px rgba(0,0,0,.1)
 }
@@ -2145,6 +2145,13 @@ amp-carousel .ampstart-image-with-caption {
   font-weight: inherit;
   line-height: 1.12
 }
+
+body{background:#8cbf4b;}
+.ampstart-btn{font-family:inherit;font-weight:inherit;font-size:1rem;line-height:1.125rem;padding:.7em .8em;text-decoration:none;white-space:nowrap;word-wrap:normal;vertical-align:middle;cursor:pointer;background-color:#000;color:#55200e;border:1px solid #fff}
+.ampstart-headerbar{background-color:#fcfcf4;color:#55200e;z-index:999;box-shadow:0 0 5px 2px rgba(0,0,0,.1)}
+.ampstart-sidebar .ampstart-icon{background-color: #55200e;fill:#fff}
+.ampstart-dropdown>section>header{background-color:#55200e;border:0;color:#55200e}
+
     </style>
 </head>
 <body>
@@ -2166,6 +2173,7 @@ amp-carousel .ampstart-image-with-caption {
     <nav class="ampstart-sidebar-nav ampstart-nav">
         <ul class="list-reset m0 p0 ampstart-label">
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Home</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="menu.amp.html">Menu</a></li>
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#locations">Locations & Hours</a></li>
         </ul>
     </nav>
@@ -2228,7 +2236,7 @@ amp-carousel .ampstart-image-with-caption {
     <!-- Start Fullpage Hero -->
     <figure class="ampstart-image-fullpage-hero m0 relative mb4">
         <amp-img alt="Welcome to Parkgrove Counselling" height="720" layout="responsive" media="(max-width: 415px)"
-                 src="img/themes_2/hero-portrait.jpg" width="404"></amp-img>
+                 src="img/themes_2/hero1.jpg" width="404"></amp-img>
         <amp-img alt="Welcome to Parkgrove Counselling" height="720" layout="fixed-height" media="(min-width: 416px)"
                  src="img/themes_2/hero1.jpg"></amp-img>
         <figcaption class="absolute top-0 right-0 bottom-0 left-0">
@@ -2242,11 +2250,10 @@ amp-carousel .ampstart-image-with-caption {
 
             </header>
             <footer class="absolute left-0 right-0 bottom-0">
-                <div class="pb4 mb4">
-                    <p>5 La Belle Place,</p>
-                    <p>Glasgow G3</p>
-                </div>
-                <div class="pb4 mb4" />
+                <p>5 La Belle Place,
+                    Glasgow G3</p>
+                <a class="ampstart-btn inline-block ampstart-fullpage-hero-cta h5 m3 text-decoration-none"
+                   href="menu.amp.html">Book</a>
             </footer>
         </figcaption>
     </figure>
