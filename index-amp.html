@@ -1,14 +1,30 @@
 <!doctype html>
 
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
 <html ⚡="">
 
 <head>
     <meta charset="utf-8">
     <title>Parkgrove Counselling</title>
-    <link href="https://kelvingrove-counselling.github.io/index.html" rel="canonical">
+    <link href="https://kelvingrove-counselling.github.io/templates/beck/templates/home.amp.html" rel="canonical">
     <link rel="icon" href="img/Tree-only-1.webp">
-
     <meta content="width=device-width,minimum-scale=1,initial-scale=1" name="viewport">
+    <meta content="googleanalytics" name="amp-google-client-id-api">
 
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -27,8 +43,7 @@
     <script async="" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async="" custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato" rel="stylesheet">
 
     <style amp-custom="">
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
@@ -2130,122 +2145,16 @@ amp-carousel .ampstart-image-with-caption {
   font-weight: inherit;
   line-height: 1.12
 }
-
-* { box-sizing: border-box }
-
-body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Helvetica Neue',
-    Helvetica,
-    sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  color: #555;
-  background-color: #fff;
-}
-
-a { color: #09d }
-
-.serif { font-family: Palatino }
-
-code, pre, samp, .mono {
-  font-family: 'Roboto Mono', Menlo, monospace;
-}
-
-h1 { font-size: 2rem }
-h2 { font-size: 1.5rem }
-h3 { font-size: 1.25rem }
-h4 { font-size: 1rem }
-h5 { font-size: .875rem }
-h6 { font-size: .75rem }
-
-.h0 {
-  font-size: 2.5rem;
-  line-height: 1;
-}
-
-@media screen and (min-width: 48em) {
-  .h0 { font-size: 5rem }
-}
-
-@media screen and (min-width: 80em) {
-  .h0 { font-size: 6vw }
-}
-
-.v60 { min-height: 60vh }
-.v80 { min-height: 80vh }
-.v100 { min-height: 100vh }
-
-.btn {
-  font-family: inherit;
-  font-size: .875rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0;
-  padding: .75rem 1rem;
-  border: 0;
-  border-radius: 2px;
-  color: #fff;
-  background-color: #555;
-  -webkit-appearance: none;
-}
-
-.btn:hover {
-  box-shadow: inset 0 0 0 999px rgba(0, 0, 0, .375);
-}
-
-.white { color: #fff }
-.black { color: #555 }
-.blue  { color: #09d }
-.dark-blue { color: #059 }
-.frost { color: rgba(255, 255, 255, .875) }
-
-.bg-white { background-color: #fff }
-.bg-black { background-color: #555 }
-.bg-blue  { background-color: #09d }
-.bg-dark-blue { background-color: #059 }
-.bg-frost { background-color: rgba(255, 255, 255, .875) }
-.bg-green { background-color: #8cbf4b }
-
-.bg-cover  { background-size: cover }
-.bg-center { background-position: center }
-
-.bd { border: 4px solid }
-.bt { border-top: 4px solid }
-.br { border-right: 4px solid }
-.bb { border-bottom: 4px solid }
-.bl { border-left: 4px solid }
-
-.vignette { box-shadow: inset 0 0 128px rgba(0, 0, 0, .375); background-image: url(img/hero1.jpg) }
-
-html { width: 100%; height: 100% }
     </style>
 </head>
 <body>
-<header class="p3 v100 flex flex-column justify-start frost bg-black bg-cover bg-center vignette"
-        >
 
+<!-- Start Navbar -->
+<header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
     <div aria-label="open sidebar" class="ampstart-navbar-trigger  pr2  " on="tap:header-sidebar.toggle" role="button"
          tabindex="0">☰
     </div>
-
-    <div class="center">
-        <h1 class="h4 caps center">Welcome to</h1>
-        <h1 class="h2 caps center">Parkgrove Counselling</h1>
-    </div>
-    <div class="flex-auto"></div>
-    <div class="mb2 center">
-        <div>5 La Belle Place,</div>
-        <div>Glasgow G3</div>
-    </div>
-    <div class="mb4" />
 </header>
-
 
 <!-- Start Sidebar -->
 <amp-sidebar class="ampstart-sidebar px3  " id="header-sidebar" layout="nodisplay">
@@ -2260,6 +2169,7 @@ html { width: 100%; height: 100% }
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#story">Story</a></li>
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#about-katie">About Katie</a></li>
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#locations">Locations & Hours</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#gallery">Photo Gallery</a></li>
         </ul>
     </nav>
 
@@ -2317,121 +2227,135 @@ html { width: 100%; height: 100% }
 <!-- End Navbar -->
 
 
-<section class="px2 py4 bg-white">
-    <div class="max-width-3 m2">
-        <h2 class="h1 caps pb2 bb">Introduction</h2>
-    </div>
-    <div class="flex flex-wrap items-baseline">
-        <div class="max-width-3 px2">
-            <p class="pb2">
-                Welcome to Parkgrove Counselling, a safe and confidential space where you can
+<div class="center">
+    <!-- Start Fullpage Hero -->
+    <figure class="ampstart-image-fullpage-hero m0 relative">
+        <amp-img alt="Welcome to Parkgrove Counselling" width="360" height="584" layout="responsive" media="(max-width: 415px)"
+                 src="img/themes_2/hero-portrait-1.jpg"></amp-img>
+        <amp-img alt="Welcome to Parkgrove Counselling" height="720" layout="fixed-height" media="(min-width: 416px)"
+                 src="img/themes_2/hero1.jpg"></amp-img>
+        <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+            <header class="p3">
+                <h1 class="ampstart-fullpage-hero-heading mb3">
+                  <span class="ampstart-fullpage-hero-heading-text">
+                    <span class="h6 block caps">Welcome to </span>
+                    <span class="h1 block bold caps my1">Parkgrove Counselling</span>
+                  </span>
+                </h1>
+            </header>
+            <footer class="absolute left-0 right-0 bottom-0">
+                <div class="pb4 mb4">
+                    <p>5 La Belle Place,</p>
+                    <p>Glasgow G3</p>
+                </div>
+                <div class="pb4 mb4" />
+            </footer>
+        </figcaption>
+    </figure>
+    <!-- End Fullpage Hero -->
+</div>
+
+<main id="content" role="main">
+    <article class="px3">
+        <section>
+            <h2 class="my1 theme2-anchored" id="story">Our Story</h2>
+            <p class="mb1 ampstart-dropcap">Welcome to Parkgrove Counselling, a safe and confidential space where you can
                 talk about issues that are
                 affecting you. We will help you explore your ways of thinking and being, and support you to find ways to
                 live your life
                 in a way that feels right for you.
                 We will help you shine a light on repeating patterns of behaviour or thinking that may be holding you
-                back.
-            </p>
-            <div class="col-12">
-                <!--<amp-img class="fit"-->
-                     <!--src="img/consulting_room_1500x1500.jpg"-->
-                     <!--alt="Consulting Room"-->
-                <!--/>-->
+                back.</p>
+            <div class="my4 mxn3 center">
+
+                <!-- Start Image with heading -->
                 <figure class="ampstart-image-with-heading  m0 relative mb4">
                     <amp-img alt="Consulting Room" height="450" layout="responsive"
-                             src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
+                             src="img/themes_2/consulting_room_1500x1500.jpg" width="600"></amp-img>
                     <figcaption class="absolute right-0 bottom-0 left-0">
-                        <header class="ampstart-image-heading px2 py2 line-height-4">
+                        <header class="ampstart-image-heading px2 py2 line-height-4"><h2 class="h1 bold">Counselling</h2>
                             <p class="h4">Room 1</p></header>
                     </figcaption>
                 </figure>
+                <!-- End Image with heading -->
 
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section id="about-katie" class="px2 py4 frost bg-green">
-    <div class="max-width-3 px2">
-        <h2 class="h1 caps m0 pb2 bb">About Katie</h2>
-    </div>
-    <!--<div class="max-width-3 px2">-->
-        <!--<div class="flex flex-wrap mt2">-->
-            <!--<div><amp-img src="img/katie_320x400.jpg" /></div>-->
-            <!--<div>-->
-                <!--<p class="my2">There are many reasons why you may be considering counselling.-->
-                    <!--Are you feeling unhappy, hurt, confused or lacking in self-confidence?-->
-                    <!--Perhaps you feel that you are going around in circles trying to find answers to a personal dilemma?-->
-                    <!--Are you struggling to understand your feelings and emotions, or having difficulties relating to-->
-                    <!--those-->
-                    <!--around you?</p>-->
-                <!--<p class="mb1">Is there something troubling you from your past or in your present?</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <div class="clearfix max-width-3">
-        <div class="col col-12 sm-col-5">
-            <div class="mx4 my2 xs-hide">
-                <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
-                         src="img/katie_320x400.jpg" width="50"></amp-img>
+        <section>
+            <h2 class="my1 theme2-anchored" id="about-katie">About Katie</h2>
+            <div class="clearfix">
+                <div class="col col-12 sm-col-5">
+                    <div class="mx4 my2 xs-hide">
+                        <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
+                                 src="img/katie_320x400.jpg" width="50"></amp-img>
+                    </div>
+                    <div class="px4 mx4 my2 sm-hide md-hide lg-hide">
+                        <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
+                                 src="img/katie_320x400.jpg" width="50"></amp-img>
+                    </div>
+                </div>
+
+                <div class="col col-12 sm-col-7">
+                    <p class="mb1">There are many reasons why you may be considering counselling.
+                        Are you feeling unhappy, hurt, confused or lacking in self-confidence?
+                        Perhaps you feel that you are going around in circles trying to find answers to a personal dilemma?
+                        Are you struggling to understand your feelings and emotions, or having difficulties relating to
+                        those
+                        around you?</p>
+                    <p class="mb1">Is there something troubling you from your past or in your present?</p>
+                </div>
             </div>
-            <div class="px4 mx4 my2 sm-hide md-hide lg-hide">
-                <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
-                         src="img/katie_320x400.jpg" width="50"></amp-img>
+        </section>
+
+        <section>
+            <h2 class="my1 theme2-anchored" id="locations">Location &amp; Hours</h2>
+            <div class="col col-12 mb4">
+                <p class="mb0">5 La Belle Place,<br>Glasgow G3<br></p>
+                <p class="mb0">Flexible hours available</p>
             </div>
-        </div>
+            <div class="col col-12 mb4">
+                <amp-iframe width="200" height="100"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                            layout="responsive"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7739615406317!2d-4.282015584065047!3d55.86658808058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442b6685d6bf%3A0x492723aed29aa2a2!2s5%20La%20Belle%20Pl%2C%20Glasgow%20G3%207LH!5e0!3m2!1sen!2suk!4v1570391999916!5m2!1sen!2suk" allowfullscreen>
+                </amp-iframe>
+            </div>
+        </section>
 
-        <div class="col col-12 sm-col-7">
-            <p class="my2">There are many reasons why you may be considering counselling.
-                Are you feeling unhappy, hurt, confused or lacking in self-confidence?
-                Perhaps you feel that you are going around in circles trying to find answers to a personal dilemma?
-                Are you struggling to understand your feelings and emotions, or having difficulties relating to
-                those
-                around you?</p>
-            <p class="mb1">Is there something troubling you from your past or in your present?</p>
-        </div>
-    </div>
 
-</section>
+        <section>
+            <h2 class="my4 theme2-anchored" id="gallery">Photo Gallery</h2>
+            <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
+            <amp-carousel class="my2 mxn3" height="200" layout="fixed-height" type="carousel">
+                <amp-img alt="Dining area" height="200" on="tap:lightbox" role="button"
+                         src="img/themes_2/hero1.jpg" tabindex="0" width="300"></amp-img>
+                <amp-img alt="Bar area" height="200" on="tap:lightbox" role="button"
+                         src="img/themes_2/consulting_room_1500x1500.jpg" tabindex="0" width="267"></amp-img>
+                <amp-img alt="Parkgrove icon" height="200" on="tap:lightbox" role="button"
+                         src="img/Tree-only-1.jpg" tabindex="0" width="300"></amp-img>
+                <amp-img alt="Parkgrove icon" height="200" on="tap:lightbox" role="button"
+                         src="img/Tree-Name-1.jpg" tabindex="0" width="300"></amp-img>
+                <amp-img alt="Parkgrove icon" height="200" on="tap:lightbox" role="button"
+                         src="img/Side-Tree-Name-1.jpg" tabindex="0" width="300"></amp-img>
+                <amp-img alt="Parkgrove icon" height="200" on="tap:lightbox" role="button"
+                         src="img/Side-Tree-Name-2.jpg" tabindex="0" width="300"></amp-img>
+            </amp-carousel>
+        </section>
+    </article>
+</main>
 
-<section class="px2 pt4">
-    <div class="max-width-3 px2">
-        <h2 class="h1 caps m0 pb2 bb">Location &amp; Hours</h2>
+<!-- Start Footer -->
+<footer class="ampstart-footer flex flex-column items-center px3 ">
+    <div>
+        <amp-img width="50" height="50"
+                 layout="fixed"
+                 src="img/Tree-only-1.webp" />
     </div>
-    <div class="clearfix px2">
-        <div class="col col-6">
-            <p class="">
-                5 La Belle Place,<br>Glasgow G3
-            </p>
-        </div>
-        <div class="col col-6">
-            <p class="">
-                Flexible hours available
-            </p>
-        </div>
-    </div>
-    <div class="max-width-3 clearfix px2 mt3">
-        <div class="col col-12">
-            <amp-iframe width="200" height="100"
-                        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        layout="responsive"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7739615406317!2d-4.282015584065047!3d55.86658808058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442b6685d6bf%3A0x492723aed29aa2a2!2s5%20La%20Belle%20Pl%2C%20Glasgow%20G3%207LH!5e0!3m2!1sen!2suk!4v1570391999916!5m2!1sen!2suk" allowfullscreen>
-            </amp-iframe>
-        </div>
-    </div>
-</section>
-
-<footer class="px2 py2 my2">
-    <div class="px2 center">
-        <img width="100" height="100"
-             layout="fixed"
-             src="img/Tree-only-1.webp" />
-    </div>
-    <div class="px2 center">
-        <small>
-            ©Parkgrove Counselling 2019
-        </small>
-    </div>
+    <small>
+        ©Parkgrove Counselling 2019
+    </small>
 </footer>
+<!-- End Footer -->
 </body>
 </html>
