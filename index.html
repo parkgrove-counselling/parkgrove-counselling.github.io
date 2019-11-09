@@ -2224,6 +2224,35 @@ h6 { font-size: .75rem }
 .vignette { box-shadow: inset 0 0 128px rgba(0, 0, 0, .375); background-image: url(img/hero1.jpg) }
 
 html { width: 100%; height: 100% }
+
+.intro-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #B8A797;
+  border-radius: 15px;
+}
+.intro-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+}
+.nav-btn-section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 15px;
+}
+.nav-btn-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #B8A797;
+  border-radius: 15px;
+}
+.nav-btn-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+}
+
     </style>
 </head>
 <body>
@@ -2317,27 +2346,27 @@ html { width: 100%; height: 100% }
 <!-- End Navbar -->
 
 
-<section id="intro" class="px4 py4 bg-white">
-    <div class="max-width-3">
-        <h2 class="h1 pb2 bb">Welcome</h2>
+<section id="intro">
+    <div class="intro-wrapper m4 p4" >
+        <div><h2 class="h1 intro-box">Welcome</h2></div>
+        <div><p class="intro-box">
+            Welcome to Parkgrove Counselling, a safe and confidential space where you can
+            talk about issues that are
+            affecting you. We will help you explore your ways of thinking and being, and support you to find ways to
+            live your life
+            in a way that feels right for you.
+            We will help you shine a light on repeating patterns of behaviour or thinking that may be holding you
+            back.
+        </p></div>
     </div>
-    <div class="flex flex-wrap items-baseline">
-        <div class="max-width-3">
-            <p class="pb2">
-                Welcome to Parkgrove Counselling, a safe and confidential space where you can
-                talk about issues that are
-                affecting you. We will help you explore your ways of thinking and being, and support you to find ways to
-                live your life
-                in a way that feels right for you.
-                We will help you shine a light on repeating patterns of behaviour or thinking that may be holding you
-                back.
-            </p>
-            <div class="col-12">
-                <!--<amp-img class="fit"-->
-                     <!--src="img/consulting_room_1500x1500.jpg"-->
-                     <!--alt="Consulting Room"-->
-                <!--/>-->
-                <figure class="ampstart-image-with-heading  m0 relative mb4">
+</section>
+
+<section id="nav-btn-section">
+    <div class="nav-btn-section-wrapper m2 p2" >
+        <div class="nav-btn-wrapper m2 p2" >
+            <div><h2 class="h1 nav-btn-box">About Katie</h2></div>
+            <div class="nav-btn-box">
+                <figure class="ampstart-image-with-heading">
                     <amp-img alt="Consulting Room" height="450" layout="responsive"
                              src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
                     <figcaption class="absolute right-0 bottom-0 left-0">
@@ -2345,81 +2374,73 @@ html { width: 100%; height: 100% }
                             <p class="h4">Room 1</p></header>
                     </figcaption>
                 </figure>
+            </div>
+        </div>
 
+        <div class="nav-btn-wrapper m2 p2" >
+            <div><h2 class="h1 nav-btn-box">Fees & Privacy</h2></div>
+            <div class="nav-btn-box">
+                <figure class="ampstart-image-with-heading">
+                    <amp-img alt="Consulting Room" height="450" layout="responsive"
+                             src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
+                    <figcaption class="absolute right-0 bottom-0 left-0">
+                        <header class="ampstart-image-heading px2 py2 line-height-4">
+                            <p class="h4">Room 1</p></header>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="nav-btn-wrapper m2 p2" >
+            <div><h2 class="h1 nav-btn-box">Contact</h2></div>
+            <div class="nav-btn-box">
+                <figure class="ampstart-image-with-heading">
+                    <amp-img alt="Consulting Room" height="450" layout="responsive"
+                             src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
+                    <figcaption class="absolute right-0 bottom-0 left-0">
+                        <header class="ampstart-image-heading px2 py2 line-height-4">
+                            <p class="h4">Room 1</p></header>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
 </section>
 
-<section id="about-katie" class="px4 py4 frost bg-green">
-    <div class="max-width-3">
-        <h2 class="h1 m0 pb2 bb">About Katie</h2>
-    </div>
-    <!--<div class="max-width-3 px2">-->
-        <!--<div class="flex flex-wrap mt2">-->
-            <!--<div><amp-img src="img/katie_320x400.jpg" /></div>-->
-            <!--<div>-->
-                <!--<p class="my2">There are many reasons why you may be considering counselling.-->
-                    <!--Are you feeling unhappy, hurt, confused or lacking in self-confidence?-->
-                    <!--Perhaps you feel that you are going around in circles trying to find answers to a personal dilemma?-->
-                    <!--Are you struggling to understand your feelings and emotions, or having difficulties relating to-->
-                    <!--those-->
-                    <!--around you?</p>-->
-                <!--<p class="mb1">Is there something troubling you from your past or in your present?</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <div class="clearfix max-width-3">
-        <div class="col col-12 sm-col-5">
-            <div class="mx4 my2 xs-hide">
-                <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
-                         src="img/katie_320x400.jpg" width="50"></amp-img>
-            </div>
-            <div class="px4 mx4 my2 sm-hide md-hide lg-hide">
-                <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
-                         src="img/katie_320x400.jpg" width="50"></amp-img>
-            </div>
-        </div>
-
-        <div class="col col-12 sm-col-7">
-            <p class="my2">Welcome to Parkgrove Counselling. There are many reasons why you may be
-                considering counselling. Are you feeling unhappy, hurt, confused or lacking in self-
-                confidence? Perhaps you feel that you are going around in circles trying to find
-                answers to a personal dilemma? Are you struggling to understand your feelings and
-                emotions, or having difficulties relating to those around you? Is there something
-                troubling you from your past or in your present? It can be daunting to take the first
-                step into counselling but you’re almost there.</p>
-        </div>
-    </div>
-
-</section>
-
-<section id="locations" class="px4 pt4">
-    <div class="max-width-3">
-        <h2 class="h1 m0 pb2 bb">Location &amp; Hours</h2>
-    </div>
-    <div class="clearfix">
-        <div class="col col-6">
-            <p class="">
-                5 La Belle Place,<br>Glasgow G3
-            </p>
-        </div>
-        <div class="col col-6">
-            <p class="">
-                Flexible hours available
-            </p>
-        </div>
-    </div>
-    <div class="max-width-3 clearfix mt3">
-        <div class="col col-12">
-            <amp-iframe width="200" height="100"
-                        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        layout="responsive"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7739615406317!2d-4.282015584065047!3d55.86658808058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442b6685d6bf%3A0x492723aed29aa2a2!2s5%20La%20Belle%20Pl%2C%20Glasgow%20G3%207LH!5e0!3m2!1sen!2suk!4v1570391999916!5m2!1sen!2suk" allowfullscreen>
-            </amp-iframe>
+<section id="qualifications">
+    <div class="intro-wrapper m4 p4" >
+        <div><h2 class="h1 intro-box">Qualifiations</h2></div>
+        <div class="nav-btn-box">
+            <figure class="ampstart-image-with-heading">
+                <amp-img alt="Consulting Room" height="450" layout="responsive"
+                         src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
+                <figcaption class="absolute right-0 bottom-0 left-0">
+                    <header class="ampstart-image-heading px2 py2 line-height-4">
+                        <p class="h4">Room 1</p></header>
+                </figcaption>
+            </figure>
+            <figure class="ampstart-image-with-heading">
+                <amp-img alt="Consulting Room" height="450" layout="responsive"
+                         src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
+                <figcaption class="absolute right-0 bottom-0 left-0">
+                    <header class="ampstart-image-heading px2 py2 line-height-4">
+                        <p class="h4">Room 1</p></header>
+                </figcaption>
+            </figure>
+            <figure class="ampstart-image-with-heading">
+                <amp-img alt="Consulting Room" height="450" layout="responsive"
+                         src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
+                <figcaption class="absolute right-0 bottom-0 left-0">
+                    <header class="ampstart-image-heading px2 py2 line-height-4">
+                        <p class="h4">Room 1</p></header>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </section>
+
+
+
 
 <footer class="px2 py2 my2">
     <div class="px2 center">
