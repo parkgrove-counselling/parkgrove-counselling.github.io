@@ -1285,7 +1285,7 @@ canvas {
 }
 
 .rounded {
-  border-radius: 3px
+  border-radius: 13px
 }
 
 .circle {
@@ -1293,19 +1293,19 @@ canvas {
 }
 
 .rounded-top {
-  border-radius: 3px 3px 0 0
+  border-radius: 13px 13px 0 0
 }
 
 .rounded-right {
-  border-radius: 0 3px 3px 0
+  border-radius: 0 13px 13px 0
 }
 
 .rounded-bottom {
-  border-radius: 0 0 3px 3px
+  border-radius: 0 0 13px 13px
 }
 
 .rounded-left {
-  border-radius: 3px 0 0 3px
+  border-radius: 13px 0 0 13px
 }
 
 .not-rounded {
@@ -2148,8 +2148,6 @@ body {
   background-color: #fff;
 }
 
-a { color: #09d }
-
 .serif { font-family: Palatino }
 
 code, pre, samp, .mono {
@@ -2221,34 +2219,76 @@ h6 { font-size: .75rem }
 .bb { border-bottom: 4px solid }
 .bl { border-left: 4px solid }
 
-.vignette { box-shadow: inset 0 0 128px rgba(0, 0, 0, .375); background-image: url(img/hero1.jpg) }
+.vignette {
+<!--    box-shadow: inset 0 0 128px rgba(0, 0, 0, .375);-->
+    background-color: white;
+    background-size: 90vh;
+    background-image: url(img/Side-Tree-Name-2.jpg);
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 479px){
+    .vignette {
+<!--        box-shadow: inset 0 0 128px rgba(0, 0, 0, .375);-->
+        background-color: white;
+        background-size: contain;
+        background-image: url(img/Tree-Name-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height:60vh;
+    }
+}
+
+@media(min-width: 480px){
+    .vignette {
+<!--        box-shadow: inset 0 0 128px rgba(0, 0, 0, .375);-->
+        background-color: white;
+        background-size: contain;
+        background-image: url(img/Side-Tree-Name-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height:40vh;
+    }
+}
 
 html { width: 100%; height: 100% }
+
+.qualifications {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.qualifications-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.qualification-list {
+    list-style-type: square;
+}
     </style>
 </head>
 <body>
-<header class="p3 v100 flex flex-column justify-start frost bg-black bg-cover bg-center vignette"
-        >
+<section class="px4 pt2 bg-white">
+    <div class="max-width-3">
+        <header class="p3 v80 flex flex-column justify-start frost bg-white bg-cover bg-center vignette">
 
-    <div aria-label="open sidebar" class="ampstart-navbar-trigger pr2" on="tap:header-sidebar.toggle" role="button"
-         tabindex="0"><span class="white">☰</span>
+    <div aria-label="open sidebar" class="ampstart-navbar-trigger right-align" on="tap:header-sidebar.toggle" role="button"
+         tabindex="0"><span class="black">☰</span>
     </div>
-
-    <div class="center">
-        <h1 class="h4 caps center">Welcome to</h1>
-        <h1 class="h2 caps center">Parkgrove Counselling</h1>
-    </div>
-    <div class="flex-auto"></div>
-    <div class="mb2 center">
-        <div>5 La Belle Place,</div>
-        <div>Glasgow G3</div>
-    </div>
-    <div class="mb4" />
 </header>
+    </div>
+</section>
 
 
 <!-- Start Sidebar -->
-<amp-sidebar class="ampstart-sidebar px3  " id="header-sidebar" layout="nodisplay">
+<amp-sidebar class="ampstart-sidebar px3 bg-green" id="header-sidebar" layout="nodisplay" side="right">
     <div class="flex justify-start items-center ampstart-sidebar-header">
         <div aria-label="close sidebar" class="ampstart-navbar-trigger items-start" on="tap:header-sidebar.toggle"
              role="button" tabindex="0">✕
@@ -2256,57 +2296,49 @@ html { width: 100%; height: 100% }
     </div>
     <nav class="ampstart-sidebar-nav ampstart-nav">
         <ul class="list-reset m0 p0 ampstart-label">
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Home</a></li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#intro">Introduction</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#intro">Welcome</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#offer">What I offer</a></li>
             <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#about-katie">About Katie</a></li>
-            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#locations">Locations & Hours</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#privacy">Fees & Privacy</a></li>
+            <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
 
     <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
         <li>
-            <a aria-label="Link to AMP HTML Twitter" class="inline-block p1" href="#" target="_blank">
-                <svg height="22.2" viewBox="0 0 53 49" width="24" xmlns="http://www.w3.org/2000/svg"><title>
-                    Twitter</title>
-                    <path class="ampstart-icon ampstart-icon-twitter"
-                          d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6"></path>
+            <a aria-label="Link to HTML E-mail" class="inline-block p1" href="mailto:contact@parkgrovecounselling.co.uk?Subject=Contact" target="_blank">
+                <svg height="18.4" viewBox="0 0 56 43" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <title>eMail</title>
+                    <path class="ampstart-icon ampstart-icon-email"
+                          d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z"></path>
                 </svg>
             </a>
         </li>
         <li>
-            <a aria-label="Link to AMP HTML Facebook" class="inline-block p1" href="#" target="_blank">
-                <svg height="23.6" viewBox="0 0 56 55" width="24" xmlns="http://www.w3.org/2000/svg"><title>
-                    Facebook</title>
+            <a aria-label="Link to HTML Telephone" class="inline-block p1" href="tel:07735-555-423" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                    <title>Telephone</title>
+                    <path class="ampstart-icon"
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a aria-label="Link to HTML Facebook" class="inline-block p1" href="https://www.facebook.com/pg/Parkgrove-Counselling-103327447780908/services" target="_blank">
+                <svg height="23.6" viewBox="0 0 56 55" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Facebook</title>
                     <path class="ampstart-icon ampstart-icon-fb"
                           d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43"></path>
                 </svg>
             </a>
         </li>
         <li>
-            <a aria-label="Link to AMP HTML Instagram" class="inline-block p1" href="#" target="_blank">
-                <svg height="24" viewBox="0 0 54 54" width="24" xmlns="http://www.w3.org/2000/svg"><title>
-                    instagram</title>
-                    <path class="ampstart-icon ampstart-icon-instagram"
-                          d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z"></path>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a aria-label="Link to AMP HTML pin trest" class="inline-block p1" href="#" target="_blank">
-                <svg height="28.5" viewBox="0 0 43 51" width="24" xmlns="http://www.w3.org/2000/svg"><title>
-                    pinterest</title>
-                    <path class="ampstart-icon ampstart-icon-pinterest"
-                          d="M8.134 18.748c0-1.6.2-3 .8-4.4.5-1.4 1.2-2.6 2.2-3.6.9-1 2-1.9 3.2-2.6 1.2-.8 2.5-1.3 3.9-1.7 1.5-.4 2.9-.5 4.4-.5 2.2 0 4.3.4 6.2 1.4 1.9.9 3.5 2.3 4.7 4.1 1.2 1.9 1.8 3.9 1.8 6.2 0 1.4-.1 2.7-.4 4-.2 1.3-.7 2.6-1.2 3.8-.6 1.2-1.3 2.3-2.2 3.2-.8.9-1.8 1.7-3.1 2.2-1.2.6-2.5.9-4 .9-1 0-1.9-.3-2.9-.7-.9-.5-1.6-1.1-2-1.9-.1.5-.3 1.4-.6 2.4-.3 1.1-.4 1.7-.5 2-.1.3-.2.9-.4 1.6-.3.7-.4 1.2-.6 1.5-.1.3-.4.7-.7 1.3-.3.6-.6 1.2-1 1.7-.3.5-.7 1.1-1.3 1.8l-.3.1-.2-.2c-.2-2.2-.3-3.6-.3-4 0-1.3.2-2.8.5-4.4.3-1.7.8-3.7 1.4-6.2.6-2.5 1-3.9 1.1-4.4-.5-.9-.7-2.1-.7-3.6 0-1.2.4-2.3 1.1-3.3.8-1.1 1.7-1.6 2.8-1.6.9 0 1.6.3 2.1.9.4.6.7 1.3.7 2.2 0 .9-.3 2.3-1 4.1-.6 1.8-.9 3.1-.9 4 0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.8 0 1.5-.2 2.2-.5.6-.4 1.2-.9 1.6-1.5.5-.6.9-1.3 1.2-2 .4-.8.6-1.5.8-2.4.2-.8.4-1.6.5-2.4.1-.7.1-1.4.1-2.1 0-2.5-.8-4.4-2.3-5.8-1.6-1.4-3.6-2.1-6.1-2.1-2.8 0-5.2 1-7.1 2.8-1.9 1.9-2.9 4.2-2.9 7.1 0 .6.1 1.2.3 1.8.2.6.4 1.1.6 1.4.2.3.4.7.5 1 .2.3.3.5.3.6 0 .4-.1.9-.3 1.6-.2.6-.5 1-.8 1 0 0-.1-.1-.4-.1-.7-.2-1.3-.6-1.9-1.2-.5-.6-1-1.3-1.3-2-.3-.8-.5-1.6-.7-2.4-.2-.7-.2-1.5-.2-2.2z"></path>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a aria-label="Link to AMP HTML E-mail" class="inline-block p1" href="#" target="_blank">
-                <svg height="18.4" viewBox="0 0 56 43" width="24" xmlns="http://www.w3.org/2000/svg"><title>
-                    email</title>
-                    <path class="ampstart-icon ampstart-icon-email"
-                          d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z"></path>
+            <a aria-label="Link to HTML Twitter" class="inline-block p1" href="https://twitter.com/ParkgroveCouns1" target="_blank">
+                <svg height="22.2" viewBox="0 0 53 49" width="24" xmlns="http://www.w3.org/2000/svg"><title>
+                    Twitter</title>
+                    <path class="ampstart-icon ampstart-icon-twitter"
+                          d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6"></path>
                 </svg>
             </a>
         </li>
@@ -2317,121 +2349,236 @@ html { width: 100%; height: 100% }
 <!-- End Navbar -->
 
 
-<section id="intro" class="px4 py4 bg-white">
+<section id="intro" class="px4 pt2 bg-white">
     <div class="max-width-3">
-        <h2 class="h1 caps pb2 bb">Introduction</h2>
+        <h2 class="h1 pb2 bb">Welcome</h2>
     </div>
     <div class="flex flex-wrap items-baseline">
         <div class="max-width-3">
-            <p class="pb2">
-                Welcome to Parkgrove Counselling, a safe and confidential space where you can
-                talk about issues that are
-                affecting you. We will help you explore your ways of thinking and being, and support you to find ways to
-                live your life
-                in a way that feels right for you.
-                We will help you shine a light on repeating patterns of behaviour or thinking that may be holding you
-                back.
+            <p class="py2">
+                Welcome to Parkgrove Counselling. There are many reasons why you may be
+                considering counselling. Are you feeling unhappy, hurt, confused or lacking in self-
+                confidence? Perhaps you feel that you are going around in circles trying to find
+                answers to a personal dilemma? Are you struggling to understand your feelings and
+                emotions, or having difficulties relating to those around you? Is there something
+                troubling you from your past or in your present? It can be daunting to take the first
+                step into counselling but you’re almost there.
             </p>
-            <div class="col-12">
-                <!--<amp-img class="fit"-->
-                     <!--src="img/consulting_room_1500x1500.jpg"-->
-                     <!--alt="Consulting Room"-->
-                <!--/>-->
-                <figure class="ampstart-image-with-heading  m0 relative mb4">
-                    <amp-img alt="Consulting Room" height="450" layout="responsive"
-                             src="img/consulting_room_1500x1500.jpg" width="600"></amp-img>
-                    <figcaption class="absolute right-0 bottom-0 left-0">
-                        <header class="ampstart-image-heading px2 py2 line-height-4">
-                            <p class="h4">Room 1</p></header>
-                    </figcaption>
-                </figure>
-
-            </div>
         </div>
     </div>
 </section>
 
-<section id="about-katie" class="px4 py4 frost bg-green">
+<section id="offer" class="px4 pt2 bg-white">
     <div class="max-width-3">
-        <h2 class="h1 caps m0 pb2 bb">About Katie</h2>
+        <h2 class="h1 pb2 bb">What I offer</h2>
     </div>
-    <!--<div class="max-width-3 px2">-->
-        <!--<div class="flex flex-wrap mt2">-->
-            <!--<div><amp-img src="img/katie_320x400.jpg" /></div>-->
-            <!--<div>-->
-                <!--<p class="my2">There are many reasons why you may be considering counselling.-->
-                    <!--Are you feeling unhappy, hurt, confused or lacking in self-confidence?-->
-                    <!--Perhaps you feel that you are going around in circles trying to find answers to a personal dilemma?-->
-                    <!--Are you struggling to understand your feelings and emotions, or having difficulties relating to-->
-                    <!--those-->
-                    <!--around you?</p>-->
-                <!--<p class="mb1">Is there something troubling you from your past or in your present?</p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="flex flex-wrap items-baseline">
+        <div class="max-width-3">
+            <p class="py2">
+                As a person-centred therapist, I offer a safe and confidential space where you can
+                talk about the issues that are affecting you. With empathy and without judgement, I
+                will help you explore your ways of thinking and being, and support you to find ways
+                to live your life in a way you that feels right for you. Rather than giving you answers
+                or advice, I will help you shine a light on repeating patterns of behaviour or thinking
+                that may be holding you back, helping you to find your own direction and a greater
+                sense of inner peace. Normally we would meet on a weekly or fortnightly basis. The
+                normal duration of a session 50 minutes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="about-katie" class="px4 pt2">
+    <div class="max-width-3">
+        <h2 class="h1 m0 pb2 bb">About Katie</h2>
+    </div>
+
     <div class="clearfix max-width-3">
         <div class="col col-12 sm-col-5">
             <div class="mx4 my2 xs-hide">
-                <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
-                         src="img/katie_320x400.jpg" width="50"></amp-img>
+                <amp-img alt="Portrait picture of Katie" class="" height="70" layout="responsive"
+                         src="img/katie-right.jpg" width="50"></amp-img>
             </div>
             <div class="px4 mx4 my2 sm-hide md-hide lg-hide">
-                <amp-img alt="Portrait picture of Katie" class="circle" height="50" layout="responsive"
-                         src="img/katie_320x400.jpg" width="50"></amp-img>
+                <amp-img alt="Portrait picture of Katie" class="" height="70" layout="responsive"
+                         src="img/katie-right.jpg" width="50"></amp-img>
             </div>
         </div>
 
         <div class="col col-12 sm-col-7">
-            <p class="my2">There are many reasons why you may be considering counselling.
-                Are you feeling unhappy, hurt, confused or lacking in self-confidence?
-                Perhaps you feel that you are going around in circles trying to find answers to a personal dilemma?
-                Are you struggling to understand your feelings and emotions, or having difficulties relating to
-                those
-                around you?</p>
-            <p class="mb1">Is there something troubling you from your past or in your present?</p>
+            <p class="my2">I am a registered Member of the British Association for Counselling and
+                Psychotherapy (BACP) and bound by their Ethical Framework for Good Practice.
+                This can be found online at
+                <a href="https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/">
+                    https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions.
+                </a>
+            </p>
+            <p class="mb1">
+                I can help with a wide range of issues including self-harm, abuse, anxiety,
+                bereavement, depression, loss, trauma, health related issues, cultural issues,
+                identity issues, self esteem, sexual identity, sexuality, spirituality.
+            </p>
+        </div>
+        <div class="col col-12 max-width-3">
+            <h3 class="h2">Qualifications:</h3>
+            <ul class="qualification-list">
+                <li>Post Graduate Diploma in Psychological Wellbeing, Counselling and Psychotherapy, 2018</li>
+                <li>Certificate in Counselling Skills, 2015</li>
+                <li>Bachelor of Education (Hons), 1994</li>
+            </ul>
+            <div class="qualifications p1 ">
+                <a href="https://www.bacp.co.uk/profile/70a6189d-5390-e711-80e8-3863bb349ac0/Therapist">
+                <div class="qualifications-item p1 border rounded">
+                        <amp-img alt="Katie's British Association for Counselling and Psychotherapy page"
+                                 width="100" height="50" layout="responsive"
+                                 src="img/BACP-Logo-374734.png" ></amp-img>
+                </div>
+                </a>
+                <a href="https://www.psychologytoday.com/gb/counselling/katie-thompson-glasgow-sct/490057">
+                <div class="qualifications-item p1 border rounded">
+                        <amp-img alt="Katie's British Association for Counselling and Psychotherapy page"
+                                 width="100" height="50" layout="responsive"
+                                 src="img/psychologytoday.png" ></amp-img>
+                </div>
+                </a>
+            </div>
         </div>
     </div>
-
 </section>
 
-<section id="locations" class="px4 pt4">
+<section id="privacy" class="px4 pt2 bg-white">
     <div class="max-width-3">
-        <h2 class="h1 caps m0 pb2 bb">Location &amp; Hours</h2>
+        <h2 class="h1 pb2 bb">Fees & Privacy</h2>
     </div>
-    <div class="clearfix">
-        <div class="col col-6">
-            <p class="">
-                5 La Belle Place,<br>Glasgow G3
+    <div class="flex flex-wrap items-baseline">
+        <div class="max-width-3">
+            <p class="py1">
+                From £45 (50 minutes).
             </p>
-        </div>
-        <div class="col col-6">
-            <p class="">
-                Flexible hours available
+            <p class="py1">
+                Concession rates are available.
             </p>
-        </div>
-    </div>
-    <div class="max-width-3 clearfix mt3">
-        <div class="col col-12">
-            <amp-iframe width="200" height="100"
-                        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-                        layout="responsive"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7739615406317!2d-4.282015584065047!3d55.86658808058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442b6685d6bf%3A0x492723aed29aa2a2!2s5%20La%20Belle%20Pl%2C%20Glasgow%20G3%207LH!5e0!3m2!1sen!2suk!4v1570391999916!5m2!1sen!2suk" allowfullscreen>
-            </amp-iframe>
+            <p class="py1">
+                Payments are usually paid in cash and taken at the end of each session.
+                Payments can also be made via bank transfer prior to sessions. Receipts are
+                available upon request.
+            </p>
+            <p class="py1">
+                I am happy to offer an initial 30 minute free session to establish if we feel we can
+                work well together.
+            </p>
+            <p class="py1">
+                I take confidentiality and privacy very seriously. I collect, store and process personal
+                data in line with GDPR and am registered with the Information Commissioner’s
+                Office.
+            </p>
         </div>
     </div>
 </section>
 
-<footer class="px2 py2 my2">
-    <div class="px2 center">
-        <img width="100" height="100"
-             layout="fixed"
-             src="img/Tree-only-1.webp" />
+<section id="photos" class="px4 pt2">
+    <div class="max-width-3">
+        <h2 class="h1 m0 pb2 bb">Photo Gallery</h2>
+        <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
+        <amp-carousel class="my2 mxn3" height="200" layout="fixed-height" type="carousel">
+            <amp-img alt="Counselling Room" height="200" on="tap:lightbox" role="button"
+                     src="img/room.jpg" tabindex="0" width="300"></amp-img>
+            <amp-img alt="Entrance" height="200" on="tap:lightbox" role="button"
+                     src="img/hero1.jpg" tabindex="0" width="267"></amp-img>
+            <amp-img alt="Park" height="200" on="tap:lightbox" role="button"
+                     src="img/park.jpg" tabindex="0" width="300"></amp-img>
+            <amp-img alt="Nameplate" height="200" on="tap:lightbox" role="button"
+                     src="img/plate.jpg" tabindex="0" width="300"></amp-img>
+        </amp-carousel>
     </div>
-    <div class="px2 center">
-        <small>
-            ©Parkgrove Counselling 2019
-        </small>
+</section>
+
+
+<section id="contact" class="px4 pt2">
+    <div class="max-width-3">
+        <h2 class="h1 m0 pb2 bb">Contact</h2>
     </div>
-</footer>
+    <div class="flex flex-wrap items-baseline">
+        <div class="max-width-3">
+            <p class="py1">
+                My practice is based in the Kelvingrove area of Glasgow and can be easily reached
+                by public transport or car. There is usually metered parking available outside the
+                building.
+            </p>
+            <p class="py1">
+                I can be contacted by email or telephone. If I am not available, please leave a short
+                message and I will get back to you as soon as possible.
+            </p>
+            <p>
+                <b>
+                If you are distressed and need urgent support, please call
+                <a href="https://www.samaritans.org/">Samaritans</a> on 116 123 or NHS 111.
+                </b>
+            </p>
+
+            <div class="max-width-3 mt2">
+                <table class="table-light">
+                    <tbody>
+                    <tr>
+                        <td><h3 class="h4 inline">eMail</h3>:<br/>
+                            <a href="mailto:contact@parkgrovecounselling.co.uk?Subject=Contact" target="_top">
+                            <p class="inline">contact@parkgrovecounselling.co.uk</p>
+                            </a></td>
+                    </tr>
+                    <tr>
+                        <td><h3 class="h4 inline">Telephone</h3>:<br/>
+                            <a href="tel:07735-555-423"><p class="inline">07735 555 423</p></a></td>
+                    </tr>
+                    <tr>
+                        <td><h3 class="h4 inline">Facebook</h3>:<br/>
+                            <a href="https://www.facebook.com/pg/Parkgrove-Counselling-103327447780908/services"><p class="inline">Parkgrove-Counselling</p></a></td>
+                    </tr>
+                    <tr>
+                        <td><h3 class="h4 inline">Twitter</h3>:<br/>
+                            <a href="https://twitter.com/ParkgroveCouns1"><p class="inline">@ParkgroveCouns1</p></a></td>
+                    </tr>
+                    <tr>
+                        <td><h3 class="h4 inline">Address</h3>:<br/>
+                            <a href="https://maps.google.com/maps?ll=55.866588,-4.279827&z=16&t=m&hl=en&gl=GB&mapclient=embed&daddr=5%20La%20Belle%20Pl%20Glasgow%20G3%207LH@55.86658809999999,-4.2798269">
+                            <p class="mb1 inline">
+                                Parkgrove Counselling,<br/>
+                                5 La Belle Place,<br/>
+                                Glasgow G3 7LH
+                            </p>
+                        </a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="max-width-3 clearfix mt3">
+                <div class="col col-12">
+                    <amp-iframe width="200" height="100"
+                                sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+                                layout="responsive"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7739615406317!2d-4.282015584065047!3d55.86658808058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442b6685d6bf%3A0x492723aed29aa2a2!2s5%20La%20Belle%20Pl%2C%20Glasgow%20G3%207LH!5e0!3m2!1sen!2suk!4v1570391999916!5m2!1sen!2suk" allowfullscreen>
+                    </amp-iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px4 pt2 bg-white">
+    <div class="max-width-3">
+
+        <footer class="px2 py2 my2">
+            <div class="px2 center">
+                <img width="100" height="100"
+                     layout="fixed"
+                     src="img/Tree-only-1.webp" />
+            </div>
+            <div class="px2 center">
+                <small>
+                    ©Parkgrove Counselling 2019
+                </small>
+            </div>
+        </footer>
+    </div>
+</section>
 </body>
 </html>
