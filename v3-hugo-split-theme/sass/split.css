@@ -164,7 +164,7 @@ body.page-template-page-fullsingle-split p {
 
 @media (max-width: 800px) {
   .fs-split .split-content .split-content-vertically-center {
-    padding: 40px; } }
+    padding: 37px; } }
 
 .split-intro {
   font-weight: 600;
@@ -304,7 +304,6 @@ body.page-template-page-fullsingle-split p {
   margin-bottom: 0; }
 
 .split-bio dl dt {
-  margin-bottom: 10px;
   font-weight: bold; }
 
 .split-bio dl dd {
