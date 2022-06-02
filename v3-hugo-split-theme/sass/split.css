@@ -306,8 +306,9 @@ body.page-template-page-fullsingle-split p {
 .split-bio dl dt {
   font-weight: bold; }
 
-.split-bio dl dd {
-  margin-bottom: 10px; }
+.split-bio dl dd a {
+  margin-bottom: 10px;
+  font-size: 14px; }
 
 .split-bio img {
   padding: 20px;
