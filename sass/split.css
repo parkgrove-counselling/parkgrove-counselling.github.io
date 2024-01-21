@@ -211,9 +211,9 @@ body.page-template-page-fullsingle-split p {
   border-bottom: 1px dotted #fdfdfd; }
 
 .split-bio a:hover {
-  color: #47bec7;
+  color: #fdfdfd;
   transition-duration: 0.1s;
-  border-bottom: 1px dotted #47bec7; }
+  border-bottom: 1px dotted #fdfdfd; }
 
 .split-bio em,
 .split-bio i {
@@ -348,7 +348,7 @@ body.page-template-page-fullsingle-split p {
   transition-duration: 0.5s; }
 
 .split-lists .split-list ul li a:hover {
-  color: #47bec7;
+  color: #fdfdfd;
   transition-duration: 0.1s; }
 
 .split-credit {
