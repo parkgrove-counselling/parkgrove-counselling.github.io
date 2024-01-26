@@ -1,0 +1,45 @@
+# Custom CSS
+
+# TODO make sure that the original theme's styles are not overridden
+div {
+    margin: 0px;
+}
+
+* {
+    font-size: 1em;
+}
+
+div#default-carousel {
+    margin-bottom: 20px;
+}
+
+div#carousel-container {
+    height: 384px;
+}
+@media screen and (max-width: 1024px) {
+    div#carousel-container {
+        height: 224px;
+    }
+}
+@media screen and (max-width: 800px) {
+    div#carousel-container {
+        height: 384px;
+    }
+}
+@media screen and (max-width: 525px) {
+    div#carousel-container {
+        height: 224px;
+    }
+}
+
+#default-carousel img{
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+img, video {
+}
