@@ -41,5 +41,9 @@ div#carousel-container {
     box-sizing: content-box;
 }
 
+figure.qualification-icon img, object, svg, video {
+  display: inline;
+}
+
 img, video {
 }
