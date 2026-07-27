@@ -1,0 +1,93 @@
+
+{{ $imageSofa := resources.Get "images/practice/hillfoot-sofa.jpg" }}
+{{ $imageSofa640 := $imageSofa.Fill "640x480 BottomLeft" }}
+{{ $imageSofa470 := $imageSofa.Fill "470x352 BottomLeft" }}
+
+{{ $imageBlinds := resources.Get "images/practice/hillfoot-blinds.jpg" }}
+{{ $imageBlinds640 := $imageBlinds.Fill "640x480 BottomRight" }}
+{{ $imageBlinds470 := $imageBlinds.Fill "470x352 BottomRight" }}
+
+{{ $imageClock := resources.Get "images/practice/hillfoot-clock.jpg" }}
+{{ $imageClock640 := $imageClock.Fill "640x480 Top" }}
+{{ $imageClock470 := $imageClock.Fill "470x352 Top" }}
+
+{{ $imageChair := resources.Get "images/practice/hillfoot-single-chair.jpg" }}
+{{ $imageChair640 := $imageChair.Fill "640x480 Bottom" }}
+{{ $imageChair470 := $imageChair.Fill "470x352 Bottom" }}
+
+{{ $imageWindow := resources.Get "images/practice/hillfoot-window.jpg" }}
+{{ $imageWindow640 := $imageWindow.Fill "640x480 BottomRight" }}
+{{ $imageWindow470 := $imageWindow.Fill "470x352 BottomRight" }}
+
+<div id="default-carousel" class="relative w-full h-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div id="carousel-container" class="relative overflow-hidden rounded-lg">
+        <!-- Item 1 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <picture>
+                <source media="(max-width: 469px)" srcset="{{ $imageSofa470.RelPermalink }}" />
+                <source media="(min-width: 470px)" srcset="{{ $imageSofa640.RelPermalink }}" />
+                <img src="{{ $imageSofa640.RelPermalink }}" alt="Sofa with lamp" />
+            </picture>
+        </div>
+        <!-- Item 2 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <picture>
+                <source media="(max-width: 469px)" srcset="{{ $imageBlinds470.RelPermalink }}" />
+                <source media="(min-width: 470px)" srcset="{{ $imageBlinds640.RelPermalink }}" />
+                <img src="{{ $imageBlinds640.RelPermalink }}" alt="Centre of room with blinds" />
+            </picture>
+        </div>
+        <!-- Item 3 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <picture>
+                <source media="(max-width: 469px)" srcset="{{ $imageClock470.RelPermalink }}" />
+                <source media="(min-width: 470px)" srcset="{{ $imageClock640.RelPermalink }}" />
+                <img src="{{ $imageClock640.RelPermalink }}" alt="Sofa with clock" />
+            </picture>
+        </div>
+        <!-- Item 4 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <picture>
+                <source media="(max-width: 469px)" srcset="{{ $imageChair470.RelPermalink }}" />
+                <source media="(min-width: 470px)" srcset="{{ $imageChair640.RelPermalink }}" />
+                <img src="{{ $imageChair640.RelPermalink }}" alt="Single chair" />
+            </picture>
+        </div>
+        <!-- Item 5 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <picture>
+                <source media="(max-width: 469px)" srcset="{{ $imageWindow470.RelPermalink }}" />
+                <source media="(min-width: 470px)" srcset="{{ $imageWindow640.RelPermalink }}" />
+                <img src="{{ $imageWindow640.RelPermalink }}" alt="Centre of room with window" />
+            </picture>
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-1 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
