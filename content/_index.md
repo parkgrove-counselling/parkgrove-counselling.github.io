@@ -80,9 +80,3 @@ Email:
 
 Telephone:
 : [07735 555 423](tel:07735-555-423)
-
-Facebook:
-: [Parkgrove-Counselling](https://www.facebook.com/pg/Parkgrove-Counselling-103327447780908/services)
-
-Twitter:
-: [@ParkgroveCouns1](https://twitter.com/ParkgroveCouns1)
