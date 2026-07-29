@@ -10,12 +10,19 @@ Welcome to Parkgrove Counselling. There are many reasons why you may be consider
 # What I offer
 
 Katie supports couples using Imago Relationship Therapy, a structured relationship-focused approach that helps partners improve communication, reduce conflict and strengthen emotional connection.
+
 Relationships can experience challenging periods where couples find themselves caught in repeated patterns of conflict, feeling disconnected, struggling to communicate, or wanting to rebuild closeness. Imago Relationship Therapy provides a supportive and structured space where both partners can feel heard, understood and respected.
+
 Through the Imago Dialogue process, couples are supported to slow down conversations, listen more deeply, understand each other’s experiences and move away from blame and defensiveness towards greater empathy, connection and mutual understanding.
+
 Katie provides couples therapy face-to-face in Milngavie and online via Zoom, creating a supportive space for both partners to explore their relationship and work towards greater understanding and connection.
+
 Alongside her couples work, Katie is a person-centred counsellor offering individual therapy for adults and young people aged 18 and over. She provides a warm, confidential and supportive space where clients can explore their thoughts, feelings and experiences at their own pace.
+
 Katie provides individual counselling face-to-face in Bearsden and Milngavie, as well as online via Zoom. She supports clients with a range of concerns including anxiety, depression, bereavement, trauma, relationship difficulties, self-esteem, stress and life transitions.
+
 Katie is also a qualified clinical supervisor, offering supervision to trainee and qualified counsellors. She provides a supportive and reflective space for practitioners to explore their client work, professional development and ethical practice.
+
 Katie offers a free 15-minute telephone call, giving you the opportunity to discuss your needs, ask any questions and find out more about how she works. It is a chance to explore whether she is the right therapist for you, with no obligation to book an appointment.
 
 # About Katie
